@@ -2,17 +2,20 @@
 Supercharging the RoboRIO with the BQ32000 from TI
 
 Started off with the BQ32000 Module from Evola:
+
 https://evola.fr/en/breakout-boards/813-real-time-clock-module-bq32000.html
 
 It is wired up to the i2c port on the RoboRIO like this:
 <insert pic here>
 
 Next, pulled the kernel driver from the NI git repo here:
+
 https://raw.githubusercontent.com/ni/linux/nilrt_pub/16.0/4.1/drivers/rtc/rtc-bq32k.c
 
 This is a stock driver for Linux mainline from what I can tell.
 
 This is built on the RoboRIO using these directions from NI:
+
 https://forums.ni.com/t5/NI-Linux-Real-Time-Documents/Tutorial-Adding-Kernel-Modules-on-NI-Linux-Real-Time/ta-p/3527186
 
 Note, you may need to add coreutils using opkg.
