@@ -21,6 +21,8 @@ https://raw.githubusercontent.com/ni/linux/nilrt_pub/16.0/4.1/drivers/rtc/rtc-bq
 
 This is a stock driver for Linux mainline from what I can tell.
 
+The stock driver file was modified to remove the need to do anything special to enable the trickle charge feature.  This is a hack but it works for this module on this platform.
+
 This is built on the RoboRIO using these directions from NI:  
 https://forums.ni.com/t5/NI-Linux-Real-Time-Documents/Tutorial-Adding-Kernel-Modules-on-NI-Linux-Real-Time/ta-p/3527186
 
