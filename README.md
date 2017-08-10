@@ -23,7 +23,7 @@ Summary of steps from the NI Document:
 - run ```source /usr/local/natinst/tools/versioning_utils.sh```
 - run ```setup_versioning_env```
 - run ```versioning_call make```
-- run ```rtc-bq32k.ko /lib/modules/`uname -r`/kernel```
+- run ```cp rtc-bq32k.ko /lib/modules/`uname -r`/kernel```
 - run ```depmod```
 
 You should be able to run 'i2cdetect -y 2' and it will show something like this:  
