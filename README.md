@@ -26,7 +26,7 @@ Summary of steps from the NI Document:
 - run ```cp rtc-bq32k.ko /lib/modules/`uname -r`/kernel```
 - run ```depmod```
 
-You should be able to run 'i2cdetect -y 2' and it will show something like this:  
+You should be able to run ```i2cdetect -y 2``` and it will show something like this:  
 ```
 admin@roboRIO-900-FRC:~/rtc-bq32k# i2cdetect -y 2  
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f  
@@ -45,7 +45,7 @@ The 68 indicates that the device has been found.
 You can now run this to instantiate the device:  
 ```echo bq32000 0x68 | tee /sys/class/i2c-adapter/i2c-2/new_device```
 
-If you run 'i2cdetect -y 2' again it will show "UU" instead of 68 indicating that the device is active:
+If you run ```i2cdetect -y 2``` again it will show "UU" instead of 68 indicating that the device is active:
 ```
 admin@roboRIO-900-FRC:~/rtc-bq32k# i2cdetect -y 2  
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f  
@@ -59,7 +59,7 @@ admin@roboRIO-900-FRC:~/rtc-bq32k# i2cdetect -y 2
 70: -- -- -- -- -- -- -- --                          
 ```
 
-Running 'dmesg' will show something like this:  
+Running ```dmesg``` will show something like this:  
 ```
 [   53.975048] bq32k 2-0068: Marshall's in your system messing with your clock!  
 [   53.975951] bq32k 2-0068: Enabled trickle RTC battery charge.  
